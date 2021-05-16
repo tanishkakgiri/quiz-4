@@ -1,0 +1,174 @@
+<html>
+
+<head>
+  <!-- Add icon library -->
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <title>FunXMaths - </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+   body{
+     color:white;
+     background-color: lightblue;
+   }
+         .vertical { 
+            border-left: 6px solid black; 
+            height: 500px; 
+            position:absolute; 
+            left: 50%; 
+        } 
+        .grid-container {
+  display: grid;
+  grid-template-columns: 80px 200px auto 30px;
+  grid-gap: 10px;
+
+  padding: 10px;
+}
+
+        
+        .btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+          .input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+ 
+  color: black;
+  min-width:70px;
+  text-align: center;
+}
+
+.input-field {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+ 
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+.btn:hover {
+  opacity: 1;
+}
+
+.jar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inspiration_glass {
+    float: left;
+    padding: 10px;
+    height: 380px;
+    width: 50%;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 1%;
+  max-width: 50%;
+  padding: 0 4px;
+
+}
+#h1{
+  border-style: groove;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,89,22,1) 46%, rgba(0,212,255,1) 100%);
+}
+.m{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,89,22,1) 46%, rgba(0,212,255,1) 100%);
+
+}
+
+    </style>
+</head>
+         
+         
+<body>
+  <center>
+<h1 class="m">Fun X Maths!!</h1>
+
+
+<center>
+    <div class="row">
+     
+    
+       
+   <div id="Maths" class="column">
+     <img src="monitor.png"></div>
+
+    <div id="Sign In" class="column">    
+      
+    <h1>Sign In</h1>
+
+  <div class="input-container">
+    <i class="fa fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username of Player 1" name="usrnm" id="username_1">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username of Player 2" name="usrnm" id="username_2">
+  </div>
+<button class="btn-grad" onclick="addUser()">Sign In</button>
+</div>
+
+ 
+</center>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
